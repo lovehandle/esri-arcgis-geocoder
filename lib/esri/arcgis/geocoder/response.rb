@@ -1,6 +1,6 @@
 module ESRI
   module ArcGIS
-    class Geocoder
+    module Geocoder
       class Response
 
         # ERRORS
@@ -34,7 +34,6 @@ module ESRI
         private
 
         attr_reader :response
-
 
       end
     end

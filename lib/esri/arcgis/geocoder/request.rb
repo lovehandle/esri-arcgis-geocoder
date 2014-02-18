@@ -1,12 +1,18 @@
 module ESRI
   module ArcGIS
-    class Geocoder
+    module Geocoder
       class Request
+
+        # CONSTANTS
+
+        HOST = "geocode.arcgis.com".freeze
+        PATH = nil.freeze
+        PORT = 80.freeze
 
         # INITIALIZER
 
-        def initialize(url)
-          @url = url
+        def initialize(parameters = {})
+          @query = self.class::Query.new(parameters)
         end
 
         # CLASS METHODS
@@ -23,7 +29,23 @@ module ESRI
 
         private
 
-        attr_reader :url
+        attr_reader :query
+
+        def host
+          self.class::HOST
+        end
+
+        def path
+          self.class::PATH
+        end
+
+        def port
+          self.class::PORT
+        end
+
+        def url
+          URI::HTTP.build(host: host, path: path, port: port, query: query.to_s)
+        end
 
         def start!(&block)
           if block_given?

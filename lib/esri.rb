@@ -7,7 +7,11 @@ module ESRI
   end
 
   class << self
-    attr_accessor :arcgis_geocoder_token
+    attr_accessor :token
   end
 
 end
+
+require "esri/arcgis"
+require "esri/arcgis/geocoder"
+

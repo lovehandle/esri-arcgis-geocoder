@@ -1,6 +1,6 @@
 module ESRI
   module ArcGIS
-    class Geocoder
+    module Geocoder
       VERSION = "0.0.1"
     end
   end
