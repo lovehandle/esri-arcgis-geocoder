@@ -41,6 +41,8 @@ response.to_hash
 #=> {"spatialReference"=>{"wkid"=>4326, "latestWkid"=>4326}, "locations"=>[{"name"=>"350 5th Ave, New York, New York, 10118", "extent"=>{"xmin"=>-73.984781, "ymin"=>40.74818, "xmax"=>-73.984461, "ymax"=>40.74854}, "feature"=>{"geometry"=>{"x"=>-73.98464773670287, "y"=>40.74837710102349}, "attributes"=>{"Loc_name"=>"USA.StreetAddress", "Score"=>100, "Match_addr"=>"350 5th Ave, New York, New York, 10118", "Addr_type"=>"StreetAddress", "Type"=>"", "PlaceName"=>"", "Place_addr"=>"", "Phone"=>"", "URL"=>"", "Rank"=>"", "AddBldg"=>"", "AddNum"=>"", "AddNumFrom"=>"350", "AddNumTo"=>"350", "Side"=>"L", "StPreDir"=>"", "StPreType"=>"", "StName"=>"5th", "StType"=>"Ave", "StDir"=>"", "StAddr"=>"", "Nbrhd"=>"", "City"=>"New York", "Subregion"=>"", "Region"=>"New York", "Postal"=>"10118", "PostalExt"=>"", "Country"=>"USA", "LangCode"=>"ENG", "Distance"=>0, "X"=>-73.984649, "Y"=>40.748377, "DisplayX"=>-73.984649, "DisplayY"=>40.748377, "Xmin"=>-73.984781, "Xmax"=>-73.984461, "Ymin"=>40.74818, "Ymax"=>40.74854}}}]}
 ```
 
+Note: available parameters can be found in the [documentation](http://resources.arcgis.com/en/help/arcgis-rest-api/#/Single_input_field_geocoding/02r300000015000000/).
+
 Geocode a with multiple input fields:
 
 ```ruby
@@ -56,9 +58,11 @@ response.to_hash
 #=> {"spatialReference"=>{"wkid"=>4326, "latestWkid"=>4326}, "locations"=>[{"name"=>"350 5th Ave, New York, New York, 10118", "extent"=>{"xmin"=>-73.984781, "ymin"=>40.74818, "xmax"=>-73.984461, "ymax"=>40.74854}, "feature"=>{"geometry"=>{"x"=>-73.98464773670287, "y"=>40.74837710102349}, "attributes"=>{"Loc_name"=>"USA.StreetAddress", "Score"=>100, "Match_addr"=>"350 5th Ave, New York, New York, 10118", "Addr_type"=>"StreetAddress", "Type"=>"", "PlaceName"=>"", "Place_addr"=>"", "Phone"=>"", "URL"=>"", "Rank"=>"", "AddBldg"=>"", "AddNum"=>"", "AddNumFrom"=>"350", "AddNumTo"=>"350", "Side"=>"L", "StPreDir"=>"", "StPreType"=>"", "StName"=>"5th", "StType"=>"Ave", "StDir"=>"", "StAddr"=>"", "Nbrhd"=>"", "City"=>"New York", "Subregion"=>"", "Region"=>"New York", "Postal"=>"10118", "PostalExt"=>"", "Country"=>"USA", "LangCode"=>"ENG", "Distance"=>0, "X"=>-73.984649, "Y"=>40.748377, "DisplayX"=>-73.984649, "DisplayY"=>40.748377, "Xmin"=>-73.984781, "Xmax"=>-73.984461, "Ymin"=>40.74818, "Ymax"=>40.74854}}}]}
 ```
 
+Note: available parameters can be found in the [documentation](http://resources.arcgis.com/en/help/arcgis-rest-api/#/Single_input_field_geocoding/02r300000015000000/).
+
 Reverse geocode a lat/lng:
 
-```
+```ruby
 response = ESRI::ArcGIS::Geocoder.reverse_geocode(location: "-73.985833,40.748417")
 
 response.status
@@ -69,8 +73,9 @@ response.body
 
 response.to_hash
 #=> {"spatialReference"=>{"wkid"=>4326, "latestWkid"=>4326}, "locations"=>[{"name"=>"350 5th Ave, New York, New York, 10118", "extent"=>{"xmin"=>-73.984781, "ymin"=>40.74818, "xmax"=>-73.984461, "ymax"=>40.74854}, "feature"=>{"geometry"=>{"x"=>-73.98464773670287, "y"=>40.74837710102349}, "attributes"=>{"Loc_name"=>"USA.StreetAddress", "Score"=>100, "Match_addr"=>"350 5th Ave, New York, New York, 10118", "Addr_type"=>"StreetAddress", "Type"=>"", "PlaceName"=>"", "Place_addr"=>"", "Phone"=>"", "URL"=>"", "Rank"=>"", "AddBldg"=>"", "AddNum"=>"", "AddNumFrom"=>"350", "AddNumTo"=>"350", "Side"=>"L", "StPreDir"=>"", "StPreType"=>"", "StName"=>"5th", "StType"=>"Ave", "StDir"=>"", "StAddr"=>"", "Nbrhd"=>"", "City"=>"New York", "Subregion"=>"", "Region"=>"New York", "Postal"=>"10118", "PostalExt"=>"", "Country"=>"USA", "LangCode"=>"ENG", "Distance"=>0, "X"=>-73.984649, "Y"=>40.748377, "DisplayX"=>-73.984649, "DisplayY"=>40.748377, "Xmin"=>-73.984781, "Xmax"=>-73.984461, "Ymin"=>40.74818, "Ymax"=>40.74854}}}]}
-
 ```
+
+Note: available parameters can be found in the [documentation](http://resources.arcgis.com/en/help/arcgis-rest-api/#/Reverse_geocoding/02r30000000n000000/).
 
 ## Contributing
 
