@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ryan@ryanclosner.com"]
   spec.summary       = %q{A Ruby ESRI ArcGIS Geocoder API wrapper}
   spec.description   = %q{A Ruby ESRI ArcGIS Geocoder API wrapper}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/rclosner/esri-arcgis-geocoder"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
