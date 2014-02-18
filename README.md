@@ -1,6 +1,6 @@
 # ESRI::ArcGIS::Geocoder
 
-A ruby wrapper to the ESRI ArcGIS Geocoder API
+A Ruby wrapper to the ESRI ArcGIS Geocoder API
 
 ## Installation
 
@@ -34,7 +34,7 @@ response.to_hash
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/esri-arcgis-geocoder/fork )
+1. Fork it ( http://github.com/rclosner/esri-arcgis-geocoder/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
