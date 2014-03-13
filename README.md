@@ -6,7 +6,7 @@ A Ruby wrapper to the ESRI ArcGIS Geocoder API
 
 Add this line to your application's Gemfile:
 
-    gem 'esri-arcgis-geocoder'
+    gem 'esri-arcgis-geocoder', require: 'esri'
 
 And then execute:
 
